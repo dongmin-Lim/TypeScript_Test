@@ -1,8 +1,18 @@
-function add(n1: number, n2: number) {
-  return n1 + n2;
+const person: {
+  name: string;
+  age: number;
+  hobbies: string[];
+} = {
+  name: "dongmin",
+  age: 27,
+  hobbies: ["Soccer", "Cooking"],
+};
+
+let favoriteActivities: string[];
+favoriteActivities = ["Soccer", "Swim"];
+
+console.log(person.name);
+
+for (const hobby of person.hobbies) {
+  console.log(hobby.toUpperCase());
 }
-
-const number1 = 5;
-const number2 = 2.8;
-
-console.log(add(number1, number2));

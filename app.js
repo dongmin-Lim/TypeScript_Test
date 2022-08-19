@@ -1,6 +1,12 @@
-function add(n1, n2) {
-    return n1 + n2;
+var person = {
+    name: "dongmin",
+    age: 27,
+    hobbies: ["Soccer", "Cooking"]
+};
+var favoriteActivities;
+favoriteActivities = ["Soccer", "Swim"];
+console.log(person.name);
+for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
+    var hobby = _a[_i];
+    console.log(hobby.toUpperCase());
 }
-var number1 = 5;
-var number2 = 2.8;
-console.log(add(number1, number2));
